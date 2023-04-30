@@ -20,6 +20,7 @@ public class Program {
        List<ChessPiece> captured = new ArrayList<>();
        
        while (true) {
+    	
     	   try {
     	   UI.clearScreen();
            UI.printMatch(chessMatch, captured);
@@ -49,7 +50,7 @@ public class Program {
     	   catch (InputMismatchException e) {
     		   System.out.println(e.getMessage());
     		   sc.nextLine();
-    	   }
+    	   }      
     	 }
 
 	}
